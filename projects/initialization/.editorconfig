@@ -1,0 +1,26 @@
+# editorconfig.org
+
+# set to true if file is present in the topmost folder of the application
+root=true
+
+[*]
+charset = utf-8
+end_of_line = lf
+# Silicon Valley's Richard may think otherwise
+indent_style = space
+# To please git. FINE. A POSIX standard.
+insert_final_newline = true
+# It's just commit noise
+trim_trailing_whitespace = true
+
+# Nodejs / Javascript / front end specific
+[*.{js,html,css,scss}]
+indent_size = 2
+
+[{**/node_modules/**,**/bower_components/**}]
+indent_style = ignore
+indent_size = ignore
+
+# Other tech stacks go here
+# Remember to remove rules not relevant to the tech stack of your project
+# Remember to also remove the comments. They have been provided only for your understanding
